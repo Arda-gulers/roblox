@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="zh-CN" data-world="delve">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>深墓 · 李朋朋</title>
+<meta name="description" content="《深墓》是一款 Roblox 组队地牢撤离。两层运行时生成，带出来的才算收益。现处于最后测试，暂未发布。">
+<meta name="theme-color" content="#0c0b0a">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Noto+Sans+SC:wght@400;500;600;700&family=Noto+Serif+SC:wght@500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/site.css">
+<script>document.documentElement.classList.add("js")</script>
+</head>
+<body data-world="delve">
+<a class="skip" href="#main">跳到内容</a>
+<div class="grain" aria-hidden="true"></div>
+
+<header class="site-head">
+  <a class="logo" href="../index.html">
+    <span class="cn">李朋朋</span>
+    <span class="en">Arda</span>
+  </a>
+  <nav class="site-nav">
+    <a href="../index.html#works" class="on">作品</a>
+    <a href="../index.html#about">关于</a>
+  </nav>
+</header>
+
+<main id="main">
+  <section class="hero">
+    <div class="shot"><img src="../assets/art/delve-hero.jpg" alt="《深墓》展示图：木栈桥通向雾中孤岛"></div>
+    <div class="veil" aria-hidden="true"></div>
+    <div class="hero-copy">
+      <span class="no">04 / 04</span>
+      <h1>深墓</h1>
+      <p class="en">Delve</p>
+      <p class="lede">组队地牢撤离。第一层是海岸线即边界的雾湾孤岛，第二层是宏格房间地牢。带出来的才算收益，死在里面本局清零。现处于最后测试，暂未发布。</p>
+      <div class="hero-actions">
+        <span class="btn ghost" aria-disabled="true">暂未发布</span>
+        <span class="pill wait"><i></i>最后测试</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="dossier wrap">
+    <div class="dossier-grid">
+      <div class="reveal">
+        <p class="pitch">去掉玩家互杀之后，撤离的紧张感必须重建，否则它会退化成一次普通的刷本。</p>
+        <p class="body-copy">本案用三件事替代：硬时限——到点未撤离判定死亡；不可再生的生命——局内没有自然回血，第一层被啃掉的每一口都在第二层结账；分叉的收益路线——浅层撤离门系数 0.5，往下走收益翻倍，风险同步上升。</p>
+        <p class="body-copy">地图每局按种子生成。第一层由高度场切出孤岛，海岸线即边界；第二层是宏格房间加折线走廊。氛围锁在主题，难度锁在战力当量预算。大厅可选职业、组队、难度，再进入传送门。</p>
+      </div>
+      <dl class="specs reveal">
+        <div><dt>类型</dt><dd>组队地牢撤离</dd></div>
+        <div><dt>人数</dt><dd>2–4 人</dd></div>
+        <div><dt>结构</dt><dd>孤岛 + 地牢，两层</dd></div>
+        <div><dt>状态</dt><dd>最后测试，暂未发布</dd></div>
+      </dl>
+    </div>
+
+    <div class="block reveal">
+      <h3>核心循环</h3>
+      <ol class="loop">
+        <li><b>大厅出发</b><span>选职业、组队、选难度，进入传送门</span></li>
+        <li><b>第一层孤岛</b><span>散怪、宝箱、篝火；浅层门与楼梯并排</span></li>
+        <li><b>第二层地牢</b><span>逐房激活，守卫房与库房是绕路选项</span></li>
+        <li><b>撤离结算</b><span>带出来的强化两件装备，打得动更高难度</span></li>
+      </ol>
+    </div>
+
+    <div class="block reveal">
+      <h3>设计要点</h3>
+      <div class="pillars">
+        <div class="pillar">
+          <h4>带出来的才算</h4>
+          <p>死在里面本局所得清零。浅层撤离能保住手上的东西，结算只有一半；往下走，收益翻数倍。</p>
+        </div>
+        <div class="pillar">
+          <h4>三个操作点</h4>
+          <p>普攻、Q、E。不设格挡键与闪避键，移动端可原样搬成三个按钮加一个摇杆。不引入法力值。</p>
+        </div>
+        <div class="pillar">
+          <h4>战力当量铺怪</h4>
+          <p>敌人数值全部反解。杂兵按单人口径，精英与首领按队伍口径。地形不承担难度，难度只由种类、数量与数值决定。</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="block reveal">
+      <h3>取舍</h3>
+      <ul class="cuts">
+        <li><b>去掉玩家互杀</b><span>互杀是撤离玩法最强的张力源，也是新人第一小时最危险的来源。本案用时限、生命预算与分叉撤离重建紧张感。</span></li>
+        <li><b>受击不给无敌帧</b><span>改为短暂硬直、移速下降。被打断但不被剥夺控制权。</span></li>
+        <li><b>辅助普攻带汲取</b><span>命中回复自身，并为队内血量最低者回复。没有治疗需求时，辅助仍然要打输出。</span></li>
+      </ul>
+    </div>
+
+    <div class="block reveal">
+      <h3>展示图</h3>
+      <div class="stills">
+        <figure class="frame">
+          <img src="../assets/art/delve-hero.jpg" alt="木栈桥通向雾岛">
+          <figcaption>展示图 · 雾湾孤岛</figcaption>
+        </figure>
+        <figure class="frame">
+          <img src="../assets/art/delve-hall.jpg" alt="火把大厅">
+          <figcaption>展示图 · 骸骨地牢</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <div class="block reveal">
+      <h3>实机截图</h3>
+      <div class="shots">
+        <figure class="frame" data-full="../assets/shots/delve-1.png">
+          <img src="../assets/shots/delve-1.png" alt="大厅营地与职业石碑">
+          <figcaption>实机 · 大厅</figcaption>
+        </figure>
+        <figure class="frame" data-full="../assets/shots/delve-2.png">
+          <img src="../assets/shots/delve-2.png" alt="第一层雾湾孤岛栈桥">
+          <figcaption>实机 · 第一层 · 雾湾孤岛</figcaption>
+        </figure>
+        <figure class="frame" data-full="../assets/shots/delve-3.png">
+          <img src="../assets/shots/delve-3.png" alt="第二层骸骨地牢火把大厅">
+          <figcaption>实机 · 第二层 · 骸骨地牢</figcaption>
+        </figure>
+      </div>
+      <p class="note">展示图由实机截图重绘，去掉界面。点开可看原图。</p>
+    </div>
+
+    <nav class="pager">
+      <a href="ward.html"><span>03 / 回廊</span><strong>← 上一份</strong></a>
+      <a href="../index.html"><span>作品集</span><strong>目录 →</strong></a>
+    </nav>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <span>© <span id="yr">2026</span> 李朋朋</span>
+  <span>深墓 · 最后测试</span>
+</footer>
+<script src="../js/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="zh-CN" data-world="blade">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>残刃 · 李朋朋</title>
+<meta name="description" content="《残刃》是一款 Roblox 第三人称动作 RPG。三章九关，敌人数值全部由击杀时长与容错次数反解。">
+<meta name="theme-color" content="#0c0b0a">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Noto+Sans+SC:wght@400;500;600;700&family=Noto+Serif+SC:wght@500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/site.css">
+<script>document.documentElement.classList.add("js")</script>
+</head>
+<body data-world="blade">
+<a class="skip" href="#main">跳到内容</a>
+<div class="grain" aria-hidden="true"></div>
+
+<header class="site-head">
+  <a class="logo" href="../index.html">
+    <span class="cn">李朋朋</span>
+    <span class="en">Arda</span>
+  </a>
+  <nav class="site-nav">
+    <a href="../index.html#works" class="on">作品</a>
+    <a href="../index.html#about">关于</a>
+  </nav>
+</header>
+
+<main id="main">
+  <section class="hero">
+    <div class="shot"><img src="../assets/art/blade-hero.jpg" alt="《残刃》展示图：红色预警上的对峙"></div>
+    <div class="veil" aria-hidden="true"></div>
+    <div class="hero-copy">
+      <span class="no">02 / 04</span>
+      <h1>残刃</h1>
+      <p class="en">The Broken Blade</p>
+      <p class="lede">近战动作 RPG。三章九关，三个首领。敌人血量由击杀时长反解，攻击力由「还能挨几下」反解。一次完整通关约四十分钟。</p>
+      <div class="hero-actions">
+        <a class="btn solid" href="https://www.roblox.com/games/122308699895226" target="_blank" rel="noopener">在 Roblox 游玩</a>
+        <span class="pill live"><i></i>可玩</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="dossier wrap">
+    <div class="dossier-grid">
+      <div class="reveal">
+        <p class="pitch">玩家心里算的是「还能挨几下」，不是每秒掉多少。攻击力按单击占血比设计，整条数值链都从这条感知出发。</p>
+        <p class="body-copy">四种敌人职能互补：腐骨兵贴脸消耗，骨弓手远程压制，重甲卫正面减伤五成逼玩家绕背或用重击破防，首领三阶段检验该章引入的要素。所有伤害都有前摇与地面预警，解法永远是看见框再翻滚。</p>
+        <p class="body-copy">连段输出按可取消点计算。初版按动画全长计算，低估玩家输出约 36%；修正后，一关腐骨兵的预测击杀时长 2.25 秒，实测 2.30 秒。</p>
+      </div>
+      <dl class="specs reveal">
+        <div><dt>类型</dt><dd>第三人称动作 RPG</dd></div>
+        <div><dt>体量</dt><dd>3 章 9 关 + 3 Boss</dd></div>
+        <div><dt>通关</dt><dd>约 40 分钟</dd></div>
+        <div><dt>状态</dt><dd>可玩</dd></div>
+      </dl>
+    </div>
+
+    <div class="block reveal">
+      <h3>核心循环</h3>
+      <ol class="loop">
+        <li><b>营地</b><span>选关、强化装备、升级</span></li>
+        <li><b>关卡</b><span>两到三波，章末首领</span></li>
+        <li><b>结算</b><span>装备、经验、金币</span></li>
+        <li><b>回到营地</b><span>解锁下一关，再出发</span></li>
+      </ol>
+    </div>
+
+    <div class="block reveal">
+      <h3>设计要点</h3>
+      <div class="pillars">
+        <div class="pillar">
+          <h4>节奏先行</h4>
+          <p>击杀时长与容错次数是输入，血量与攻击力由它们反解。后期加密度与出手频率，不靠堆血。</p>
+        </div>
+        <div class="pillar">
+          <h4>可取消点决定输出</h4>
+          <p>可取消点才是玩家能接上下一段输入的时刻。按动画全长算，会系统性低估伤害。</p>
+        </div>
+        <div class="pillar">
+          <h4>围殴致死时间恒定</h4>
+          <p>三只小怪贴身、玩家不闪避不喝药，存活 12.2 秒，与等级无关。占血比定攻击力的必然结果。</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="block reveal">
+      <h3>取舍</h3>
+      <ul class="cuts">
+        <li><b>不做天赋树</b><span>升级只让数字变大。加天赋必须先把乘区写进反解，否则会打破已经对上的击杀时长。</span></li>
+        <li><b>不做开放世界与多人对抗</b><span>这些都要靠内容量支撑。本项目要把一套完整的战斗与数值体系跑通并验证。</span></li>
+        <li><b>重击本身亏伤害</b><span>轻击连段每秒倍率更高。重击的存在理由是破防，面对重甲卫时手法必须切换。</span></li>
+      </ul>
+    </div>
+
+    <div class="block reveal">
+      <h3>展示图</h3>
+      <div class="stills three">
+        <figure class="frame">
+          <img src="../assets/art/blade-hero.jpg" alt="红色预警上的对峙">
+          <figcaption>展示图 · 预警与围殴</figcaption>
+        </figure>
+        <figure class="frame">
+          <img src="../assets/art/blade-camp.jpg" alt="海边营地">
+          <figcaption>展示图 · 营地</figcaption>
+        </figure>
+        <figure class="frame">
+          <img src="../assets/art/blade-corridor.jpg" alt="走廊里的残局">
+          <figcaption>展示图 · 崩塌回廊</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <div class="block reveal">
+      <h3>实机截图</h3>
+      <div class="shots">
+        <figure class="frame" data-full="../assets/shots/blade-1.png">
+          <img src="../assets/shots/blade-1.png" alt="营地：守夜人与铁匠">
+          <figcaption>实机 · 营地</figcaption>
+        </figure>
+        <figure class="frame" data-full="../assets/shots/blade-2.png">
+          <img src="../assets/shots/blade-2.png" alt="遗迹外庭，角色踩在红色预警上">
+          <figcaption>实机 · 1-1 遗迹外庭</figcaption>
+        </figure>
+        <figure class="frame" data-full="../assets/shots/blade-3.png">
+          <img src="../assets/shots/blade-3.png" alt="崩塌回廊第二波">
+          <figcaption>实机 · 1-2 崩塌回廊</figcaption>
+        </figure>
+      </div>
+      <p class="note">展示图由实机截图重绘，去掉界面。点开可看原图。</p>
+    </div>
+
+    <nav class="pager">
+      <a href="wasteland.html"><span>01 / 荒原</span><strong>← 上一份</strong></a>
+      <a href="ward.html"><span>03 / 回廊</span><strong>下一份 →</strong></a>
+    </nav>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <span>© <span id="yr">2026</span> 李朋朋</span>
+  <span><a href="https://www.roblox.com/games/122308699895226" target="_blank" rel="noopener">残刃 · Roblox</a></span>
+</footer>
+<script src="../js/site.js"></script>
+</body>
+</html>

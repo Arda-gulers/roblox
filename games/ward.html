@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="zh-CN" data-world="ward">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>回廊 · 李朋朋</title>
+<meta name="description" content="《回廊》是一款 Roblox 第三人称恐怖生存。单局约五分钟，程序化楼层，找齐三枚熔断器后撤离。">
+<meta name="theme-color" content="#0c0b0a">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Noto+Sans+SC:wght@400;500;600;700&family=Noto+Serif+SC:wght@500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/site.css">
+<script>document.documentElement.classList.add("js")</script>
+</head>
+<body data-world="ward">
+<a class="skip" href="#main">跳到内容</a>
+<div class="grain" aria-hidden="true"></div>
+
+<header class="site-head">
+  <a class="logo" href="../index.html">
+    <span class="cn">李朋朋</span>
+    <span class="en">Arda</span>
+  </a>
+  <nav class="site-nav">
+    <a href="../index.html#works" class="on">作品</a>
+    <a href="../index.html#about">关于</a>
+  </nav>
+</header>
+
+<main id="main">
+  <section class="hero">
+    <div class="shot"><img src="../assets/art/ward-hero.jpg" alt="《回廊》展示图：手电打在绳缚怪物上"></div>
+    <div class="veil" aria-hidden="true"></div>
+    <div class="hero-copy">
+      <span class="no">03 / 04</span>
+      <h1>回廊</h1>
+      <p class="en">The Ward</p>
+      <p class="lede">单局约五分钟的恐怖生存。断电的废弃疗养院里，找齐三枚熔断器，恢复供电后从东南角撤离。楼层每局重新生成。</p>
+      <div class="hero-actions">
+        <a class="btn solid" href="https://www.roblox.com/games/79384215484087/The-Ward" target="_blank" rel="noopener">在 Roblox 游玩</a>
+        <span class="pill live"><i></i>可玩</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="dossier wrap">
+    <div class="dossier-grid">
+      <div class="reveal">
+        <p class="pitch">恐惧要可管理。开关灯、蹲伏、步速直接改变自己的可见性；每一次遭遇都有玩家能按下的结束键。</p>
+        <p class="body-copy">资源是光、理智与体力三条互相咬合的线。开手电能看见路，也把侦测距离拉到 1.8 倍；关灯则隐蔽，理智持续下降。玩家冲刺永远快过怪物追击，压力来自体力条——若怪物更快，追逐会退化成运气判定。</p>
+        <p class="body-copy">正面对抗是负期望。钢管打出硬直需要的站桩时间里，挨到的伤害超过生命上限。近战的唯一用途是打断一次抓取后逃跑。怪物不会死，血量归零表示气势被打断，随后满血归来。</p>
+      </div>
+      <dl class="specs reveal">
+        <div><dt>类型</dt><dd>第三人称恐怖生存</dd></div>
+        <div><dt>单局</dt><dd>约 5 分钟</dd></div>
+        <div><dt>目标</dt><dd>3 枚熔断器</dd></div>
+        <div><dt>状态</dt><dd>可玩</dd></div>
+      </dl>
+    </div>
+
+    <div class="block reveal">
+      <h3>核心循环</h3>
+      <ol class="loop">
+        <li><b>安全屋出发</b><span>楼层本局生成，确认通路</span></li>
+        <li><b>寻找熔断器</b><span>管理光、理智、体力，规避巡逻</span></li>
+        <li><b>安装三次</b><span>中央配电箱，每次站定 2.5 秒</span></li>
+        <li><b>东南角撤离</b><span>供电恢复，传送至海边结算</span></li>
+      </ol>
+    </div>
+
+    <div class="block reveal">
+      <h3>设计要点</h3>
+      <div class="pillars">
+        <div class="pillar">
+          <h4>视听侦测可读</h4>
+          <p>视觉需连续看到 0.6 秒才判定发现，被瞥见一眼仍有机会缩回掩体。听觉半径等于当前噪音，蹲行归零。</p>
+        </div>
+        <div class="pillar">
+          <h4>脱战有成本</h4>
+          <p>蹲伏加关灯、脱离视线且距离足够，维持 1.5 秒后丢失目标。蹲伏极慢，关灯期间理智持续下降，何时停下是一次判断。</p>
+        </div>
+        <div class="pillar">
+          <h4>单一难度旋钮</h4>
+          <p>电池投放量决定单局有多少时间必须摸黑。调整投放即可整体平移难度，不必改动其他参数。</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="block reveal">
+      <h3>取舍</h3>
+      <ul class="cuts">
+        <li><b>不做多人与剧情演出</b><span>这些都要靠内容量支撑。本项目要把一套可审计的数值管线跑通：参数集中于单一数据源，关键结论用探针回归。</span></li>
+        <li><b>不做多楼层与道具合成</b><span>单人单局，目标链短而闭合。等级与属性点跨局保留，构成唯一的长期回报。</span></li>
+        <li><b>中央区域无自发游荡</b><span>配电箱是全局唯一推进点。若此处随时有怪，三次站定安装会变成抽卡。</span></li>
+      </ul>
+    </div>
+
+    <div class="block reveal">
+      <h3>展示图</h3>
+      <div class="stills three">
+        <figure class="frame">
+          <img src="../assets/art/ward-hero.jpg" alt="手电打在怪物上">
+          <figcaption>展示图 · 遭遇</figcaption>
+        </figure>
+        <figure class="frame">
+          <img src="../assets/art/ward-beds.jpg" alt="黑暗病房与铁床">
+          <figcaption>展示图 · 病房</figcaption>
+        </figure>
+        <figure class="frame">
+          <img src="../assets/art/ward-cabinet.jpg" alt="配电柜前的角色">
+          <figcaption>展示图 · 配电箱</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <div class="block reveal">
+      <h3>实机截图</h3>
+      <div class="shots">
+        <figure class="frame" data-full="../assets/shots/ward-1.png">
+          <img src="../assets/shots/ward-1.png" alt="病房铁床与应急灯">
+          <figcaption>实机 · 病房</figcaption>
+        </figure>
+        <figure class="frame" data-full="../assets/shots/ward-2.png">
+          <img src="../assets/shots/ward-2.png" alt="被发现时的绳缚怪物">
+          <figcaption>实机 · 被发现</figcaption>
+        </figure>
+        <figure class="frame" data-full="../assets/shots/ward-3.png">
+          <img src="../assets/shots/ward-3.png" alt="安装熔断器">
+          <figcaption>实机 · 安装熔断器</figcaption>
+        </figure>
+      </div>
+      <p class="note">展示图由实机截图重绘，去掉界面。点开可看原图。</p>
+    </div>
+
+    <nav class="pager">
+      <a href="blade.html"><span>02 / 残刃</span><strong>← 上一份</strong></a>
+      <a href="delve.html"><span>04 / 深墓</span><strong>下一份 →</strong></a>
+    </nav>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <span>© <span id="yr">2026</span> 李朋朋</span>
+  <span><a href="https://www.roblox.com/games/79384215484087/The-Ward" target="_blank" rel="noopener">回廊 · Roblox</a></span>
+</footer>
+<script src="../js/site.js"></script>
+</body>
+</html>
